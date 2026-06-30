@@ -1,0 +1,260 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    animation: coresfundo 12s infinite;
+}
+
+@keyframes coresfundo {
+    0%, 100% {background-color: #bcbcff;}
+    20% {background-color: #aef3f3;}
+    40% {background-color: #fffbcb;}
+    60% {background-color: #c0ffc0;}
+    80% {background-color: #ffd0ff;}
+}
+
+section {
+    margin: 10px 0px;
+}
+
+header {
+    background-color: #CCCCFF;
+    width: 100%;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header nav {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: larger;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline solid;
+    color: blueviolet;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #003d6e;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#chamada {
+    margin: 8px;
+    max-width: 52%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: larger;
+    color: #1f0a31;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.coratenta {
+    color: #1b77c3;
+    font-weight: bolder;
+}
+
+#filmes {
+    width: 85%;
+    justify-content: center;
+}
+
+#galeria {
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    max-width: 90%;
+}
+
+#galeria img {
+    max-width: 220px;
+    max-height: 320px;
+    object-fit: cover;
+    cursor: pointer;
+    border: white 5px solid;
+    border-radius: 5%;
+    transition: transform 0.5s ease-in-out;
+}
+
+#galeria img:hover {
+    border: #ff0000 6px solid;
+    transform: scale(1.1);
+}
+
+#alinhardevs {
+    display: flex;
+    
+}
+
+.devs {
+    max-width: 230px;
+    max-height: 230px;
+    border-radius: 50%;
+}
+
+footer {
+    min-width: 100%;
+    margin: 0px auto;
+}
+
+#rodape {
+    min-width: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f0a31;
+    color: #CCCCFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#rodape:hover {
+    background-color: #CCCCFF;
+    color: #1f0a31;
+}
+
+#privacidade {
+    max-width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#privacidadeheader {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff00;
+    color: #003d6e;
+}
+
+#quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    font-family: Verdana, sans-serif;
+}
+
+#container-quiz {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo-quiz {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo-quiz label {
+    font-weight: bold;
+    color: #1f0a31;
+}
+
+.campo-quiz input, .campo-quiz select {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #1b77c3;
+    font-size: medium;
+}
+
+#container-quiz button {
+    background-color: #1b77c3;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#container-quiz button:hover {
+    background-color: blueviolet;
+}
+
+#resultado-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #1f0a31;
+    color: #CCCCFF;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #chamada {
+        max-width: 90%;
+        font-size: medium;
+    }
+
+    header nav ul {
+        gap: 15px;
+    }
+
+    header ul li a {
+        font-size: medium;
+    }
+
+    #container-quiz {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    #galeria img {
+        max-width: 140px;
+        max-height: 210px;
+    }
+
+    #alinhardevs img {
+        max-width: 150px;
+        border-radius: 50%;
+    }
+}

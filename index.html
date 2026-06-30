@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QUIZ CINEMATCH</title>
+</head>
+<body>
+    <header>
+        <nav><ul>
+            <li><a href="#home" title="Página inicial">HOME</a></li>
+            <li><a href="#quiz" title="Jogue o quiz">QUIZ</a></li>
+            <li><a href="#filmes" title="Filmes a serem sugeridos">FILMES</a></li>
+            <li><a href="#desenvolvedores" title="Conheça os devs!">DESENVOLVEDORES</a></li>
+        </ul></nav>
+    </header>
+    <section id="home">
+        <div id="titulo"><h1>CINEMATCH</h1></div>
+        <p id="frase-dia" style="font-style: italic; color: #1f0a31; margin-top: 10px; font-weight: bold;"></p>
+        <div id="chamada">
+            <p>Ei, Você! Você mesmo que está lendo! <br> Tá a fim de um filme ou série mas não sabe o que escolher? <br><span class="coratenta">Então esse é o seu site ideal!</span></p>
+            <p>Aqui no CINEMATCH nós te recomendamos mídias ótimas que são atualizadas mensalmente. Com base nas suas respostas ao quiz, nós escolhemos uma diversão ideal pra você.</p>
+            <p>Abaixo Você encontrará o quiz e mais algumas coisas bem legais, aproveite e dê uma olhada 😉</p>
+            </div>
+    </section>
+
+    <section id="quiz">
+        <h2>DESCUBRA SEU FILME IDEAL</h2>
+        <section id="quiz">
+       
+        
+        <div id="container-quiz">
+            <div class="campo-quiz">
+                <label for="input-idade">Qual é a sua idade?</label>
+                <input type="number" id="input-idade" min="0" max="120">
+            </div>
+
+            <div class="campo-quiz">
+                <label for="selecao-humor">Como você está se sentindo hoje?</label>
+                <select id="selecao-humor">
+                    <option value="feliz">Feliz / Leve</option>
+                    <option value="tenso">Tenso / Curioso</option>
+                </select>
+            </div>
+
+            <div class="campo-quiz">
+                <label for="selecao-genero">Qual gênero você prefere agora?</label>
+                <select id="selecao-genero">
+                    <option value="comedia">Comédia</option>
+                    <option value="drama">Drama</option>
+                    <option value="acao">Ação / Suspense</option>
+                </select>
+            </div>
+
+            <div class="campo-quiz">
+                <label for="selecao-duracao">Duração preferida:</label>
+                <select id="selecao-duracao">
+                    <option value="curto">Curto (Até 1h - ex: Séries)</option>
+                    <option value="medio">Médio (1h30 a 2h)</option>
+                    <option value="longo">Longo (Mais de 2h)</option>
+                    <option value="qualquer">Tanto faz / Não me importo</option>
+                </select>
+            </div>
+
+            <div class="campo-quiz">
+                <label for="selecao-formato">Estilo visual:</label>
+                <select id="selecao-formato">
+                    <option value="animacao">Desenho (Animação)</option>
+                    <option value="live-action">Live Action (Atores reais)</option>
+                </select>
+            </div>
+
+            <button onclick="recomendarFilme()">RECOMENDAR FILME</button>
+        </div>
+
+        <div id="resultado-container">
+            <h3 id="resultado">O seu resultado aparecerá aqui!</h3>
+        </div>
+    
+    </section> 
+    
+    <section id="filmes">
+        <div id="filmestitulo">
+            <h2>Veja mais sobre as mídias que podem ser recomendadas!</h2>
+            <h3>Clique nos pôsteres para conferir</h3>
+        </div>
+        <nav id="galeria">
+            <a href="https://www.adorocinema.com/filmes/filme-27415/" target="_blank" title="Confira Shrek"><img src="imagens/shrek.jpg" alt="Poster representativo do filme Shrek"></a>
+            <a href="https://www.adorocinema.com/filmes/filme-109125/" target="_blank" title="Confira Coraline"><img src="imagens/coraline.jpg" alt="Poster representativo do filme Coraline"></a>
+            <a href="https://www.adorocinema.com/filmes/filme-863/" target="_blank" title="Confira O Iluminado"><img src="imagens/iluminado.jpg" alt="Poster representativo do filme O Iluminado"></a>
+            <a href="https://www.adorocinema.com/filmes/filme-218265/" target="_blank" title="Confira Vingadores: Guerra Infinita"><img src="imagens/guerrainfinita.jpg" alt="Poster representativo do filme Vingadores: Guerra Infinita"></a>
+            <a href="https://www.adorocinema.com/series/serie-11542/" target="_blank" title="Confira Brooklyn Nine-Nine"><img src="imagens/99.jpg" alt="Poster representativo da série Brooklyn Nine-Nine"></a>
+            <a href="https://www.adorocinema.com/filmes/filme-218956/" target="_blank" title="Confira Toy Story 4"><img src="imagens/toystory.jpg" alt="Poster representativo do filme Toy Story 4"></a>
+            <a href="https://www.adorocinema.com/series/serie-19156/" target="_blank" title="Confira Stranger Things"><img src="imagens/strangerthings.jpg" alt="Poster representativo da série Stranger Things"></a>
+            <a href="https://www.adorocinema.com/filmes/filme-196604/" target="_blank" title="Confira Guardiões da Galáxia"><img src="imagens/guardioes.jpg" alt="Poster representativo do filme Guardiões da Galáxia"></a>
+            <a href="https://www.adorocinema.com/filmes/filme-182745/" target="_blank" title="Confira Intocáveis"><img src="imagens/intocaveis.jpg" alt="Poster representativo do filme Intocáveis"></a>
+            <a href="https://www.adorocinema.com/filmes/filme-221387/" target="_blank" title="Confira John Wick: De Volta ao Jogo"><img src="imagens/johnwick.jpg" alt="Poster representativo do filme John Wick: De Volta ao Jogo"></a>
+            <a href="https://www.adorocinema.com/filmes/filme-8488/" target="_blank" title="Confira Jurassic Park"><img src="imagens/jurassicpark.jpg" alt="Poster representativo do filme Jurassic Park"></a>
+            <a href="https://www.adorocinema.com/filmes/filme-37485/" target="_blank" title="Confira A Viagem de Chihiro"><img src="imagens/chihiro.jpg" alt="Poster representativo do filme A Viagem de Chihiro"></a>
+        </nav>
+    </section>
+
+    <section id="desenvolvedores">
+        <h2>Quem somos nós?</h2>
+        <p>Apenas duas pessoas empenhadas em transformar o CINEMATCH em realidade. 😊</p><br>
+        <div id="alinhardevs">
+            <div>
+                <img src="imagens/venancio.jpg" alt="Imagem representativa do desenvolvedor E. VENÂNCIO" class="devs">
+                <h4>Desenvolvedor do site, VENÂNCIO</h4>
+                <h5>Indicação musical: Flawless - The Neighbourhood</h5>
+            </div>
+            <div>
+                <img src="imagens/" alt="Imagem representativa do desenvolvedor R. ALENCAR" class="devs">
+                <h4>Desenvolvedor do site, ALENCAR</h4>
+                <h5>Indicação musical: Found Heaven - Conan Gray</h5>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="privacidade.html"><div id="rodape"><h5>©PROGRAMAÇÃO APLICADA - E. VENÂNCIO & R. ALENCAR - 2026</h5></div></a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
